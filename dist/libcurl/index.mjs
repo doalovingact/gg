@@ -6398,6 +6398,7 @@ var LibcurlClient = class {
     if (this.transport)
       libcurl.transport = this.transport;
     libcurl.set_websocket(this.wisp);
+    await libcurl.load_wasm();
     this.session = new libcurl.HTTPSession({
       proxy: this.proxy
     });
