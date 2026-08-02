@@ -58,7 +58,7 @@ window.FONT_OBFUSCATION_CONFIG={enabled:!0,defaultFont:"plusjakartasans",exclude
   }
 
   // Load non-module deps first, then modules after all finish
-  var srcs = ["./data/bundle.js","./data/config.js","./assets/config.js","./assets/all.js"];
+  var srcs = ["./ddx-config.js","./data/bundle.js","./data/config.js","./assets/config.js","./assets/all.js"];
   var pending = srcs.length;
   function done() { if (--pending === 0) loadModules(); }
   srcs.forEach(function(u) {
